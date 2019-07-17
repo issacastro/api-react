@@ -14,6 +14,9 @@ app.use(cors());
 app.use(express.json());
 
 //Routes
+app.get('/',(req,res)=>{
+    res.status(200).send('API');
+})
 app.use('/api/users',require('./routes/users'));
 app.use('/api/notes',require('./routes/notes'));
 
