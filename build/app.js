@@ -16,6 +16,9 @@ app.use((0, _morgan["default"])('dev'));
 app.use((0, _cors["default"])());
 app.use(_express["default"].json()); //Routes
 
+app.get('/', function (req, res) {
+  res.status(200).send('API');
+});
 app.use('/api/users', require('./routes/users'));
 app.use('/api/notes', require('./routes/notes'));
 module.exports = app;
