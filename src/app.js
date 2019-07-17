@@ -15,7 +15,7 @@ app.use(express.json());
 
 //Routes
 app.get('/',(req,res)=>{
-    res.status(200).send('API');
+    res.status(200).send('API with MongoDB');
 })
 app.use('/api/users',require('./routes/users'));
 app.use('/api/notes',require('./routes/notes'));
