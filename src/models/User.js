@@ -6,6 +6,16 @@ const userSchema = new Schema({
         required:true,
         unique : true
     },
+    userBoleta : {
+        type : String,
+        required:true,
+        unique : true
+    },
+    userCorreo : {
+        type : String,
+        required:true,
+        unique : true
+    },
     password : {
         type : String,
         required:true
